@@ -1,0 +1,23 @@
+﻿@model Models.TarefaVM
+<div>
+    
+
+    <div id="tarefa" class="modal modalInputMenor">
+        <form asp-controller="Tarefa" asp-action="Upsert">
+            <div class="form-group row">
+                <label>TITULO</label>
+                <input asp-for="Tarefa.Titulo" value="@Model.Tarefa.Titulo" class="form-control" />
+
+                <label>DESCRIÇÃO</label>
+                <input asp-for="Tarefa.Descricao" value="@Model.Tarefa.Descricao" class="form-control" />
+
+      
+                <button type="submit" class="MT btn btn-success">SALVAR</button>
+            </div>
+        </form>
+
+
+    </div>
+    
+
+</div>

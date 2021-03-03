@@ -1,0 +1,158 @@
+﻿@model Models.TarefaVM
+<!------------------------------------Inicio----Modal----------------------------------------------->
+<partial name="~/Views/PartialViews/_Salvar.cshtml" />
+<!------------------------------------Fim----Modal----------------------------------------------->
+
+
+
+
+<div class="ContAicionar">
+    <button class="btn  btn-success btnplus"><a href="#tarefa" rel="modal:open">+</a></button>
+</div>
+
+
+@*<section>
+    <h1 class="titleTarefa">TAREFAS</h1>
+</section>*@
+
+
+<br>
+<ul class="nav nav-tabs">
+    <li class="nav-item">
+      
+        <a class="nav-link active" data-toggle="tab" href="#TodasTarefas">
+
+        TODAS TAREFAS</a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link " data-toggle="tab" href="#ANDAMENTO">ANDAMENTO</a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link " data-toggle="tab" href="#CONCLUIDO">CONCLUIDOS</a>
+    </li>
+
+</ul>
+
+
+<div class="tab-content">
+    <!--TODAS TAREFAS -->
+    <div id="TodasTarefas" class="container tab-pane active">
+        <br><br>
+        <section style="height: 456px; overflow-y: scroll; ">
+            <div>
+
+                @foreach (var item in Model.Tarefas)
+                {
+
+                    if (item.Status == Status.INICIAR)
+                    {
+                        <div class="ListTarefas" style=" border-bottom: 6PX SOLID #099bff;">
+                            <form asp-controller="Tarefa" asp-action="AtualizarStatusTarefa">
+                                <h6 style="    text-align: center;">@item.Titulo</h6>
+
+                                <div style="float: left;">
+                                    <button class="btn btn-info" style=" border-radius: 26px;" class="btn btn-primary" asp-action="Visualizar" asp-route-Id="@item.Id"><i class="far fa-eye"></i></button>
+
+                                    <a class="btn btn-primary" style=" border-radius: 26px;" asp-action="AtualizarStatusTarefa" asp-route-Id="@item.Id"><i class="fas fa-play"></i></a>
+                                </div>
+
+                          
+                                <div style="float: right;">
+                                    <button class="btn btn-primary" style=" border-radius: 26px;" asp-action="Edit" asp-route-Id="@item.Id"><i class="fas fa-edit"></i></button>
+                                    <button class="btn btn-danger" style=" border-radius: 26px;" asp-action="Delete" asp-route-Id="@item.Id"><i class="fas fa-trash-alt"></i></button>
+                                </div>
+                            </form>
+
+                        </div>
+                    }
+                    else if (item.Status.Equals(Status.ANDAMENTO))
+                    {
+                        <div class="ListTarefas" style="border-bottom: 6PX SOLID #ffff0c;">
+
+                            <form asp-controller="Tarefa">
+                                <h6 style="    text-align: center;">@item.Titulo</h6>
+
+                                <div style="float: left;">
+                                    <button class="btn btn-info"  style=" border-radius: 26px;" class="btn btn-primary" asp-action="Visualizar" asp-route-Id="@item.Id"><i class="far fa-eye"></i></button>
+                                    <button class="btn btn-warning" style=" border-radius: 26px;" ><i class="fas fa-pause"></i></button>
+                                    <button class="btn btn-success" style=" border-radius: 26px;" asp-action="AtualizarStatusTarefa" asp-route-Id="@item.Id"><i class="fas fa-stop"></i></button>
+                                </div>
+
+                                <div style="float: right;">
+                                    <button class="btn btn-primary" style=" border-radius: 26px;" asp-action="Edit" asp-route-Id="@item.Id"><i class="fas fa-edit"></i></button>
+                                    <button class="btn btn-danger"  style=" border-radius: 26px;" asp-action="Delete" asp-route-Id="@item.Id"><i class="fas fa-trash-alt"></i></button>
+                                </div>
+                            </form>
+                        </div>
+                    }
+
+                }
+            </div>
+
+        </section>
+    </div>
+
+    <div id="ANDAMENTO" class="container tab-pane fade">
+
+        <br><br>
+        <section style="height: 456px; overflow-y: scroll; ">
+            @foreach (var item in Model.Tarefas)
+            {
+                if (item.Status.Equals(Status.ANDAMENTO))
+                {
+                    <div class="ListTarefas" style="border-bottom: 6PX SOLID #ffff0c;">
+
+                        <form asp-controller="Tarefa">
+                            <h6 style="    text-align: center;">@item.Titulo</h6>
+
+                            <div style="float: left;">
+                                <button class="btn btn-info" style=" border-radius: 26px;" class="btn btn-primary" asp-action="Visualizar" asp-route-Id="@item.Id"><i class="far fa-eye"></i></button>
+                                <button class="btn btn-warning" style=" border-radius: 26px;"><i class="fas fa-pause"></i></button>
+                                <button class="btn btn-success" style=" border-radius: 26px;" asp-action="AtualizarStatusTarefa" asp-route-Id="@item.Id"><i class="fas fa-stop"></i></button>
+                            </div>
+
+                            <div>
+
+                            </div>
+                            <div style="float: right;">
+                                <button class="btn btn-primary" style=" border-radius: 26px;" asp-action="Edit" asp-route-Id="@item.Id"><i class="fas fa-edit"></i></button>
+                                <button class="btn btn-danger" style=" border-radius: 26px;" asp-action="Delete" asp-route-Id="@item.Id"><i class="fas fa-trash-alt"></i></button>
+                            </div>
+                        </form>
+                    </div>
+                }
+            }
+
+
+</section>
+    </div>
+
+    <div id="CONCLUIDO" class="container tab-pane fade">
+        <br><br>
+        <section style="height: 456px; overflow-y: scroll; ">
+            @foreach (var item in Model.Tarefas)
+            {
+                if (item.Status.Equals(Status.CONCLUIDO))
+                {
+                    <div class="ListTarefas" style="        border-bottom: 6PX SOLID #14de47;">
+
+                        <form asp-controller="Tarefa">
+                            <h6 style="    text-align: center;">@item.Titulo</h6>
+
+                            <div style="float: left;">
+                                <button class="btn btn-info" style=" border-radius: 26px;" class="btn btn-primary" asp-action="Visualizar" asp-route-Id="@item.Id"><i class="far fa-eye"></i></button>
+                                <button class="btn btn-primary"><i class="fas fa-check-square"></i></button>
+                                @*<button class="btn btn-success" asp-action="AtualizarStatusTarefa" asp-route-Id="@item.Id">Concluir</button>*@
+                            </div>
+
+
+
+                        </form>
+                    </div>
+                }
+            }
+            </section>
+    </div>
+
+
+</div>

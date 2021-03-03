@@ -1,0 +1,24 @@
+﻿@model Models.Model.Tarefa
+
+
+<form >
+
+    <div class="form-group row">
+
+        <label>Código</label>
+        <input asp-for="Id" readonly class="form-control" />
+
+        <label>TITULO</label>
+        <input asp-for="Titulo" readonly class="form-control" />
+
+        <label>DESCRIÇÃO</label>
+        <input asp-for="Descricao" readonly class="form-control" />
+
+        <label>STATUS</label>
+        <input asp-for="Status" readonly class="form-control" />
+
+
+         
+        <button  type="submit" asp-action="index" class="MT btn btn-success">VOLTAR</button>
+    </div>
+</form>

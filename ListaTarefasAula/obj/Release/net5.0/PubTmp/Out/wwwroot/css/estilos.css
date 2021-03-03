@@ -1,0 +1,100 @@
+*
+{
+    margin: 0;
+    padding: 0;
+}
+
+/*Cores*/
+
+.BtnColorGreen{
+    color: white;
+background:#33CC00;
+
+
+}
+.HeaderNavDefault{
+    background-color: #001952;
+    
+}
+
+.FontColorWhite {
+    color: white;
+}
+
+.ListTarefas {
+    border: 1px solid #cecdcd;
+    height: 83px;
+    margin: 10px;
+    margin: auto;
+    width: 85%;
+    padding: 8px;
+    margin-bottom: 10px;
+}
+.ContAicionar {
+    float: right;
+    left: 92%;
+    position: fixed;
+    margin-top: 35%;
+}
+
+.btnplus{
+    width: 67px;
+    height: 67px;
+    border-radius: 50px;
+}
+
+.btnplus a{
+    text-decoration: none;
+    color: white;
+    font-size: 16pt;
+}
+
+
+.titleTarefa{
+    
+    MARGIN-TOP: 46px;
+    color: #ffffff;
+    text-align: center;
+    background-color: #5a88cc;
+    font-size: 24pt;
+    padding: 9px;
+}
+
+.modalInputMenor {
+    width: 23%;
+    height: 37%;
+    margin: 0;
+    padding: 21px;
+    max-width: 743px;
+}
+
+.MT {
+    margin-top: 12px;
+}
+
+.heigth63 {
+    height: 63px;
+}
+
+.Width144 {
+    width: 144px;
+}
+
+a {
+    text-decoration: none;
+}
+
+.modal a.close-modal {
+    top: 6.5px!important;
+    margin-right: 19px;
+}
+
+.btnModalSalvar {
+    margin-top: 34%;
+    PADDING: 8PX;
+    BACKGROUND-COLOR: #009e61;
+    BORDER: NONE;
+    COLOR: WHITE;
+    outline: none;
+    cursor: pointer;
+}
