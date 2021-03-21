@@ -7159,11 +7159,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\_DESENVOLVIMENTO\\CODIGO FONTE\\_ListaTarefasAula\\ListaTarefasAula\\ListaTarefasAula.csproj",
+      "projectUniqueName": "D:\\_DESENVOLVIMENTO\\CODIGO FONTE\\SITE_TAREFAS\\ListaTarefasAula\\ListaTarefasAula.csproj",
       "projectName": "ListaTarefasAula",
-      "projectPath": "D:\\_DESENVOLVIMENTO\\CODIGO FONTE\\_ListaTarefasAula\\ListaTarefasAula\\ListaTarefasAula.csproj",
+      "projectPath": "D:\\_DESENVOLVIMENTO\\CODIGO FONTE\\SITE_TAREFAS\\ListaTarefasAula\\ListaTarefasAula.csproj",
       "packagesPath": "C:\\Users\\USER\\.nuget\\packages\\",
-      "outputPath": "D:\\_DESENVOLVIMENTO\\CODIGO FONTE\\_ListaTarefasAula\\ListaTarefasAula\\obj\\",
+      "outputPath": "D:\\_DESENVOLVIMENTO\\CODIGO FONTE\\SITE_TAREFAS\\ListaTarefasAula\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
@@ -7186,11 +7186,11 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "projectReferences": {
-            "D:\\_DESENVOLVIMENTO\\CODIGO FONTE\\_ListaTarefasAula\\DataAcess\\DataAcess.csproj": {
-              "projectPath": "D:\\_DESENVOLVIMENTO\\CODIGO FONTE\\_ListaTarefasAula\\DataAcess\\DataAcess.csproj"
+            "D:\\_DESENVOLVIMENTO\\CODIGO FONTE\\SITE_TAREFAS\\DataAcess\\DataAcess.csproj": {
+              "projectPath": "D:\\_DESENVOLVIMENTO\\CODIGO FONTE\\SITE_TAREFAS\\DataAcess\\DataAcess.csproj"
             },
-            "D:\\_DESENVOLVIMENTO\\CODIGO FONTE\\_ListaTarefasAula\\Models\\Models.csproj": {
-              "projectPath": "D:\\_DESENVOLVIMENTO\\CODIGO FONTE\\_ListaTarefasAula\\Models\\Models.csproj"
+            "D:\\_DESENVOLVIMENTO\\CODIGO FONTE\\SITE_TAREFAS\\Models\\Models.csproj": {
+              "projectPath": "D:\\_DESENVOLVIMENTO\\CODIGO FONTE\\SITE_TAREFAS\\Models\\Models.csproj"
             }
           }
         }

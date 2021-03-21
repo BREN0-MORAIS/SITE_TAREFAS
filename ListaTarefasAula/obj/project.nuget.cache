@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "topSIWRTINgBX5aRASrYAVB9Pq54GF3Sed7atiV74wuD9WaL2DA2tB5UQGuVTwjgJ4iqgPEL1rab8eyNmw/tLw==",
+  "dgSpecHash": "XXKVURyUHsiFzi0ffJgR+yE94KjH2IaXBK1f55w9wIG7hXnKFFX5SP6imt1LJVsjMSMIc+4Vl6cWmhyp8K7Srg==",
   "success": true,
-  "projectFilePath": "D:\\_DESENVOLVIMENTO\\CODIGO FONTE\\_ListaTarefasAula\\ListaTarefasAula\\ListaTarefasAula.csproj",
+  "projectFilePath": "D:\\_DESENVOLVIMENTO\\CODIGO FONTE\\SITE_TAREFAS\\ListaTarefasAula\\ListaTarefasAula.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\USER\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\USER\\.nuget\\packages\\microsoft.aspnetcore.html.abstractions\\2.2.0\\microsoft.aspnetcore.html.abstractions.2.2.0.nupkg.sha512",

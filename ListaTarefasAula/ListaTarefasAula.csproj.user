@@ -11,6 +11,6 @@
     <WebStackScaffolding_IsReferencingScriptLibrariesSelected>True</WebStackScaffolding_IsReferencingScriptLibrariesSelected>
     <WebStackScaffolding_LayoutPageFile />
     <WebStackScaffolding_DbContextTypeFullName>DataAcess.AppDataContext</WebStackScaffolding_DbContextTypeFullName>
-    <NameOfLastUsedPublishProfile>D:\_DESENVOLVIMENTO\CODIGO FONTE\_ListaTarefasAula\ListaTarefasAula\Properties\PublishProfiles\FolderProfile.pubxml</NameOfLastUsedPublishProfile>
+    <NameOfLastUsedPublishProfile>D:\_DESENVOLVIMENTO\CODIGO FONTE\SITE_TAREFAS\ListaTarefasAula\Properties\PublishProfiles\Default Settings1.pubxml</NameOfLastUsedPublishProfile>
   </PropertyGroup>
 </Project>

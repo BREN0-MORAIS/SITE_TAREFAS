@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+Esse arquivo é usado pelo processo de publicação/pacote do seu projeto Web. É possível personalizar o comportamento deste processo
+ao editar este arquivo MSBuild. Para saber mais sobre isso, visite https://go.microsoft.com/fwlink/?LinkID=208121. 
+-->
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <TimeStampOfAssociatedLegacyPublishXmlFile />
+    <EncryptedPassword />
+    <_PublishTargetUrl>ftp://ftp.site4now.net/tarefasaula</_PublishTargetUrl>
+    <History>False|2021-03-19T02:36:53.4697755Z;</History>
+  </PropertyGroup>
+  <ItemGroup>
+    <File Include="appsettings.Development.json">
+      <publishTime>02/26/2021 19:12:58</publishTime>
+    </File>
+    <File Include="appsettings.json">
+      <publishTime>03/18/2021 22:01:51</publishTime>
+    </File>
+    <File Include="DataAcess.dll">
+      <publishTime>03/18/2021 22:20:04</publishTime>
+    </File>
+    <File Include="DataAcess.pdb">
+      <publishTime>03/18/2021 22:20:04</publishTime>
+    </File>
+    <File Include="dotnet-aspnet-codegenerator-design.dll">
+      <publishTime>02/09/2021 01:32:20</publishTime>
+    </File>
+    <File Include="Humanizer.dll">
+      <publishTime>06/02/2020 12:07:58</publishTime>
+    </File>
+    <File Include="ListaTarefasAula.deps.json">
+      <publishTime>03/18/2021 22:29:54</publishTime>
+    </File>
+    <File Include="ListaTarefasAula.dll">
+      <publishTime>03/18/2021 22:27:09</publishTime>
+    </File>
+    <File Include="ListaTarefasAula.exe">
+      <publishTime>03/18/2021 22:27:09</publishTime>
+    </File>
+    <File Include="ListaTarefasAula.pdb">
+      <publishTime>03/18/2021 22:27:09</publishTime>
+    </File>
+    <File Include="ListaTarefasAula.runtimeconfig.json">
+      <publishTime>03/18/2021 18:52:05</publishTime>
+    </File>
+    <File Include="ListaTarefasAula.Views.dll">
+      <publishTime>03/18/2021 22:27:10</publishTime>
+    </File>
+    <File Include="ListaTarefasAula.Views.pdb">
+      <publishTime>03/18/2021 22:27:10</publishTime>
+    </File>
+    <File Include="Microsoft.AspNetCore.Razor.Language.dll">
+      <publishTime>10/26/2020 21:58:46</publishTime>
+    </File>
+    <File Include="Microsoft.Bcl.AsyncInterfaces.dll">
+      <publishTime>04/14/2020 21:39:12</publishTime>
+    </File>
+    <File Include="Microsoft.CodeAnalysis.CSharp.dll">
+      <publishTime>11/11/2020 23:15:12</publishTime>
+    </File>
+    <File Include="Microsoft.CodeAnalysis.CSharp.Workspaces.dll">
+      <publishTime>11/11/2020 23:20:06</publishTime>
+    </File>
+    <File Include="Microsoft.CodeAnalysis.dll">
+      <publishTime>11/11/2020 23:14:40</publishTime>
+    </File>
+    <File Include="Microsoft.CodeAnalysis.Razor.dll">
+      <publishTime>10/26/2020 21:59:10</publishTime>
+    </File>
+    <File Include="Microsoft.CodeAnalysis.Workspaces.dll">
+      <publishTime>11/11/2020 23:16:26</publishTime>
+    </File>
+  </ItemGroup>
+</Project>
